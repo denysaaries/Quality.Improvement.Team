@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   <!-- Navbar -->
+  <nav class="navbar" aria-label="Navigasi utama">
+    <div class="logo" onclick="showView('dashboard-main')">
+      <i class="fa-solid fa-house"></i> Dashboard
+    </div>
+    <ul class="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#tujuan">Tujuan</a></li>
+      <li><a href="#manfaat">Manfaat</a></li>
+      <li><a href="#improvement-tools">Improvement Tools</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+  </nav>
+
+ <!-- Hero -->
+  <header class="hero">
+    <h1>QUALITY IMPROVEMENT TEAM (QIT)</h1>
+    <p>"Saatnya Paragonian berkolaborasi, berinovasi, dan menjelajah ide-ide baru demi perbaikan berkelanjutan"</p>
+  </header>
+
+
+ <!-- Tombol-tombol dashboard -->
+<div class="dashboard-buttons" style="background: linear-gradient(135deg, #1a4da0, #1abc9c); padding: 20px; border-radius: 12px; display:flex; flex-wrap:wrap; gap:15px; justify-content:center;">
+  <button onclick="window.open('https://docs.google.com/spreadsheets/d/1nPfCcH1rqfWKdBUrGApuAeBG8v6L28MUy1NbN01Q_oM/edit?usp=sharing', '_blank')">
+    Pembentukan QIT Batch 8
+  </button>
+
+  <button onclick="window.open('https://bit.ly/PresensiTimQIT8', '_blank')">
+    Absensi Tim
+  </button>
+
+  <button onclick="window.open('https://forms.office.com/pages/responsepage.aspx?id=5kTD0iZi-kqUSmLWzg2YwncIviPZneFJmgn26ooAEdNUNkVVQk9ZUTdBU1owUEtaQjRQM0hLSTdPWi4u&route=shorturl', '_blank')">
+    Absensi Fasilitator
+  </button>
+
+  <button onclick="window.open('https://docs.google.com/spreadsheets/d/1zgF_0E_Y6jEpqIvueQB2y9sN46AkQVp_ZCNwtrnk138/edit?usp=sharing', '_blank')">
+    Transparansi Point Challenge
+  </button>
+
+  <button onclick="window.open('https://lookerstudio.google.com/reporting/1b04bdd5-778c-4de3-9196-ae59b4ac6510', '_blank')">
+    Dashboard Point Challenge
+  </button>
+
+  <button onclick="window.open('https://drive.google.com/drive/folders/1W5gHlxvRP8CWRybq4P9TarUm_TlhhKAY?usp=drive_link', '_blank')">
+    Data Pendukung
+  </button>
+
+  <button onclick="window.open('https://docs.google.com/spreadsheets/d/1GIutLMyN0d4TI1uabxKaWwI0MJxvJB6JqkWmbGxhuKk/edit?usp=sharing', '_blank')">
+    Referensi Quality Objective Section
+  </button>
+
+  <button onclick="window.open('https://docs.google.com/spreadsheets/d/1ZA8Ctgn4u5IT5DJV3mSYJZnL-ozP0gK-QDjzMrBlbQQ/edit?usp=sharing', '_blank')">
+    Template Risalah
+  </button>
+
+    <button onclick="window.open('https://drive.google.com/drive/folders/11LQ1f6aajnKm4xXcTXF02ZCRdL787mJI?usp=drive_link', '_blank')">
+    Summary Best Risalah
+  </button>
+
+  <!-- Tombol Kembali ke Dashboard -->
+  <button onclick="backToDashboard()">Kembali ke Dashboard</button>
+</div>
+
+
+
+
+  <!-- Tentang -->
+  <section id="tentang" class="content">
+    <h2>Tentang Kami</h2>
+    <p>
+      Quality Improvement Team merupakan kelompok yang terdiri dari karyawan dengan
+      pekerjaan sejenis yang bertemu secara berkala untuk membahas dan memecahkan
+      masalah pekerjaan dan lingkungannya dengan tujuan untuk meningkatkan mutu
+      dengan menggunakan perangkat pengendali mutu.
+    </p>
+  </section>
+
+  <!-- Tujuan -->
+  <section id="tujuan" class="content">
+    <h2>Tujuan Kami</h2>
+    <p>
+      Tujuan utama dari Quality Improvement Tim adalah untuk membahas permasalahan
+      yang terjadi di perusahaan dan memberikan rekomendasi solusi terhadap
+      pemecahan masalah tersebut kepada pihak Manajemen. Masalah-masalah yang
+      dibahas adalah masalah-masalah yang berkaitan dengan pekerjaan seperti:
+    </p>
+    <ul>
+      <li>Kualitas Produk</li>
+      <li>Masalah internal terkait Quality, Cost, Safety, Delivery, Moral, dan Environment</li>
+      <li>Overall Equipment Effectiveness (OEE)</li>
+      <li>Scrap Bulk dan Packaging</li>
+      <li>Internal Process Departemen</li>
+      <li>Improvement Proses, SHE, dll</li>
+    </ul>
+  </section>
+
+  <!-- Manfaat -->
+  <section id="manfaat" class="content">
+    <h2>Manfaat Kami</h2>
+    <p>Manfaat penerapan QIT antara lain:</p>
+    <ul>
+      <li>Peningkatan mutu dan nilai tambah</li>
+      <li>Peningkatan produktivitas sekaligus penurunan biaya</li>
+      <li>Peningkatan kemampuan penyelesaian pekerjaan sesuai target</li>
+      <li>Peningkatan moral kerja dengan mengubah tingkah laku</li>
+      <li>Peningkatan hubungan atasan dan bawahan</li>
+      <li>Peningkatan keterampilan dan keselamatan kerja</li>
+      <li>Peningkatan kepuasan kerja</li>
+      <li>Pengembangan tim</li>
+    </ul>
+  </section>
+
+  <!-- Improvement Tools -->
+  <section id="improvement-tools" class="content">
+    <h2>Improvement Tools Kami</h2>
+    <h3>8 Langkah Improvement:</h3>
+    <ol>
+      <li>Identifikasi Masalah</li>
+      <li>Analisa Data</li>
+      <li>Analisa Sebab</li>
+      <li>Rencana Improvement</li>
+      <li>Pelaksanaan Improvement</li>
+      <li>Periksa Hasil</li>
+      <li>Standarisasi</li>
+      <li>Masalah Berikutnya</li>
+    </ol>
+
+    <h3>7 Basic Quality Tools:</h3>
+    <ol>
+      <li>Checksheet</li>
+      <li>Histogram</li>
+      <li>Control Chart</li>
+      <li>Diagram Scatter</li>
+      <li>Diagram Pareto</li>
+      <li>Diagram Ishikawa</li>
+      <li>Flowchart</li>
+    </ol>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="content">
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <img src="QIT1.jpg" alt="Kegiatan QIT 1">
+      <img src="QIT2.jpg" alt="Kegiatan QIT 2">
+      <img src="QIT3.jpg" alt="Kegiatan QIT 3">
+      <img src="QIT4.jpg" alt="Kegiatan QIT 4">
+    </div>
+  </section>
+
+
+  <!-- Video -->
+<section id="video" class="content">
+  <h2>Video</h2>
+  <div class="video-gallery">
+    <!-- Video MP4 -->
+    <video width="320" height="240" controls>
+      <source src="VIDEO.MP4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+  </div>
+  </section>   
+
+
+  <!-- Kontak -->
+  <section id="kontak" class="content">
+    <h2>Kontak Kami</h2>
+    <p><strong>Instagram:</strong> @Hi.learning</p>
+    <p><strong>Whatsapp Siti Nurkamila:</strong> (+62) 878-1404-5008 - Jatake 1 & 3</p>
+    <p><strong>Whatsapp Irrolia Riandiani:</strong> (+62) 878-1727-7513 - Jatake 2 & 5</p>
+    <p><strong>Whatsapp Tri Utami:</strong> (+62) 859-4687-0850 - Jatake 4</p>
+    <p><strong>Whatsapp Deden Haitami:</strong> (+62) 878-1404-5175 - Jatake 6 & 3</p>
+    <p><strong>Alamat:</strong> Jl. Raya Industri IV Blok AG No.8, Kota Tangerang, Banten 15135</p>
+  </section>
+
+
+
+
+
+  <!-- Dashboard Views -->
+  <section id="dashboard-views" class="view content">
+    <div id="qit-batch" class="view-content">
+      <h2>Pembentukan QIT Batch 8</h2>
+      <div id="qit-batch-data"></div>
+      <button onclick="backToDashboard()">Kembali</button>
+    </div>
+    <div id="absensi-tim" class="view-content">
+      <h2>Absensi Tim</h2>
+      <div id="absensi-tim-data"></div>
+      <button onclick="backToDashboard()">Kembali</button>
+    </div>
+    <div id="absensi-fasilitator" class="view-content">
+      <h2>Absensi Fasilitator</h2>
+      <div id="absensi-fasilitator-data"></div>
+      <button onclick="backToDashboard()">Kembali</button>
+    </div>
+    <div id="transparansi-point" class="view-content">
+      <h2>Transparansi Point Challenge</h2>
+      <div id="transparansi-point-data"></div>
+      <button onclick="backToDashboard()">Kembali</button>
+    </div>
+    <div id="dashboard-point" class="view-content">
+      <h2>Dashboard Point Challenge</h2>
+      <div id="dashboard-point-data"></div>
+      <button onclick="backToDashboard()">Kembali</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quality Improvement Team</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
